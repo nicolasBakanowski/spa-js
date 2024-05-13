@@ -1,7 +1,9 @@
 function smoothScroll(target) {
     const element = document.querySelector(target);
+    const windowHeight = window.innerHeight; 
+    const scrollToPosition = element.offsetTop - (windowHeight / 2) + (element.offsetHeight / 2);
     window.scrollTo({
-        top: element.offsetTop,
+        top: scrollToPosition,
         behavior: 'smooth'
     });
 }
