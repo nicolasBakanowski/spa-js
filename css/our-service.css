@@ -1,0 +1,58 @@
+#service {
+    background-color: lightblue;
+    background-position: center;
+    color: #000; 
+    padding: 50px 0;
+    overflow-x: auto; 
+    white-space: nowrap; 
+}
+
+.services-container {
+    display: flex; 
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+}
+
+
+.service-card {
+    flex: 0 0 auto; 
+    width: 300px; 
+    margin-right: 20px; 
+    margin-bottom: 20px; 
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.service-card h2 {
+    margin: 0 0 10px; 
+    font-size: 20px;
+    color: #333;
+}
+
+.service-card p {
+    margin: 0; 
+    font-size: 16px;
+    color: #666;
+    overflow: hidden; 
+    white-space: normal; 
+}
+
+
+@media screen and (max-width: 768px) {
+    #service {
+        padding: 50px 20px; 
+    }
+    
+    .services-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    .service-card {
+        width: calc(100% - 40px); 
+        margin-right: 0; 
+    }
+}
