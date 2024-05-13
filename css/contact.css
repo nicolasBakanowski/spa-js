@@ -1,0 +1,24 @@
+#contacto {
+    background-color: #50c481;
+    background-size: cover;
+    background-position: center;
+    padding: 70px;
+    text-align: center; 
+}
+
+#contacto h1 {
+    color: #fff; 
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#turno-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #50c481; 
+    text-decoration: none;
+    border: 2px solid #fff; 
+    border-radius: 5px;
+}
+
