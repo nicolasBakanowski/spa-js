@@ -26,5 +26,18 @@ document.addEventListener('DOMContentLoaded', function() {
         contactoSection.appendChild(form);
 
         turnoLink.parentNode.removeChild(turnoLink);
+        
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            let nombre = nombreInput.value;
+            let hora = horaInput.value;
+
+            let confirmacion = confirm('¿Quieres confirmar el turno?\n\nNombre: ' + nombre + '\nHora: ' + hora);
+
+            if (confirmacion) {
+                alert('¡Turno confirmado con éxito!');
+            }
+        });
     });
 });
